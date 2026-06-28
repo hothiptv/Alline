@@ -1,0 +1,46 @@
+<—- font cho chữ —->
+.font-modern { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 0.5px; }
+.font-nunito { font-family: 'Nunito', sans-serif; }
+.font-ab { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
+.font-anton { font-family: 'Anton', sans-serif; letter-spacing: 1px; }
+
+<—- căn chỉnh giữa phải hay trái —->
+.alignment-center { text-align: center; }
+.alignment-right { text-align: right; }
+.alignment-left { text-align: left; }
+
+<—- link font —->
+url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+<—- Độ dày cho chữ —->
+.thne-1 { font-weight: 100; } .thne-2 { font-weight: 200; } .thne-3 { font-weight: 300; }
+.thne-4 { font-weight: 400; } .thne-5 { font-weight: 500; } .thne-6 { font-weight: 600; }
+.thne-7 { font-weight: 700; } .thne-8 { font-weight: 800; } .thne-9 { font-weight: 900; }
+.thne-10 { font-weight: 1000; }
+
+<—- Đg thẳng —->
+/* 1. hr mặc định: Giờ chỉ là một khung nền tối (màu xám đen #333), làm nền tảng cho các hiệu ứng khác nổi lên */
+hr { border: none; height: 2px; background-color: #333333; width: 100%; margin: 15px 0; }
+
+/* 2. Class dài hết cỡ (Giữ nguyên) */
+.hr-end { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
+
+/* 3. Class viền xám: Biến nền thành màu trắng xịn sò và bọc thêm viền xám bên ngoài */
+.hr-border { background-color: #ffffff !important; border: 1px solid #d3d3d3 !important; box-sizing: border-box; }
+
+/* 4. Class hiệu ứng sóng xanh: Nền cốt lõi màu đen/tối để vệt sáng xanh (#2ecc71) quét qua nhìn cực kỳ nổi và ảo diệu */
+.hr-animation { position: relative; overflow: hidden; background-color: #1a1a1a !important; } .hr-animation::after { content: ""; position: absolute; top: 0; left: -50%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, #2ecc71, transparent); animation: loading-scan 2s linear infinite; } @keyframes loading-scan { 0% { left: -50%; } 100% { left: 100%; } }
+
+<—- body —->
+/* 1. Class làm nền tối nhạt (Dark Mode thanh lịch) */
+.body-dark { background-color: #1a1a1a !important; color: #e0e0e0 !important; }
+
+/* 2. Class tạo nền 3 màu uốn lượn dải lụa (Style Liquid Gradient của macOS) */
+
+/* 2. Class tạo nền 3 màu uốn lượn dải lụa (Style Liquid Gradient của macOS) */
+.body-bg1 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" preserveAspectRatio="none"><filter id="blend-glow"><feGaussianBlur stdDeviation="65" result="blur"/><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 3 -0.1" result="goo"/><feComposite in="SourceGraphic" in2="goo" operator="atop"/></filter><filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="25" flood-color="%23000" flood-opacity="0.45"/></filter><g filter="url(%23blend-glow)"><path fill="%2300d2ff" filter="url(%23shadow)" d="M0,0 L1440,0 L1440,250 Q1080,180 720,250 T0,250 Z"/><path fill="none" stroke="%23ffffff" stroke-width="6" stroke-opacity="0.5" filter="url(%23blend-glow)" d="M0,250 Q1080,180 720,250 T1440,250"/><path fill="%2300a8ff" filter="url(%23shadow)" d="M0,230 Q360,160 720,230 T1440,230 L1440,500 Q1080,430 720,500 T0,500 Z"/><path fill="none" stroke="%23ffffff" stroke-width="6" stroke-opacity="0.6" filter="url(%23blend-glow)" d="M0,500 Q1080,430 720,500 T1440,500"/><path fill="%230074e4" filter="url(%23shadow)" d="M0,480 Q360,410 720,480 T1440,480 L1440,750 Q1080,680 720,750 T0,750 Z"/><path fill="none" stroke="%23ffffff" stroke-width="6" stroke-opacity="0.6" filter="url(%23blend-glow)" d="M0,750 Q1080,680 720,750 T1440,750"/><path fill="%23004080" filter="url(%23shadow)" d="M0,730 Q360,660 720,730 T1440,730 L1440,1000 L0,1000 Z"/></g></svg>') !important; background-size: 100% 100% !important; background-attachment: fixed !important; background-repeat: no-repeat !important; filter: saturate(1.3) brightness(1.05) !important; }
+
+
+
+/* 3. Class tạo hiệu ứng kính mờ thủy tinh xuyên thấu (Glassmorphism phong cách iOS 26 - Bản tăng mờ) */
+.body-glass { background: rgba(255, 255, 255, 0.25) !important; backdrop-filter: blur(40px) saturate(200%) !important; -webkit-backdrop-filter: blur(40px) saturate(200%) !important; border: 1px solid rgba(255, 255, 255, 0.25) !important; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important; }

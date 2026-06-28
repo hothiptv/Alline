@@ -1,24 +1,24 @@
-<—- font cho chữ —->
+
 .font-modern { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 0.5px; }
 .font-nunito { font-family: 'Nunito', sans-serif; }
 .font-ab { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
 .font-anton { font-family: 'Anton', sans-serif; letter-spacing: 1px; }
 
-<—- căn chỉnh giữa phải hay trái —->
+
 .alignment-center { text-align: center; }
 .alignment-right { text-align: right; }
 .alignment-left { text-align: left; }
 
-<—- link font —->
+
 url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-<—- Độ dày cho chữ —->
+
 .thne-1 { font-weight: 100; } .thne-2 { font-weight: 200; } .thne-3 { font-weight: 300; }
 .thne-4 { font-weight: 400; } .thne-5 { font-weight: 500; } .thne-6 { font-weight: 600; }
 .thne-7 { font-weight: 700; } .thne-8 { font-weight: 800; } .thne-9 { font-weight: 900; }
 .thne-10 { font-weight: 1000; }
 
-<—- Đg thẳng —->
+
 /* 1. hr mặc định: Giờ chỉ là một khung nền tối (màu xám đen #333), làm nền tảng cho các hiệu ứng khác nổi lên */
 hr { border: none; height: 2px; background-color: #333333; width: 100%; margin: 15px 0; }
 
@@ -31,7 +31,7 @@ hr { border: none; height: 2px; background-color: #333333; width: 100%; margin: 
 /* 4. Class hiệu ứng sóng xanh: Nền cốt lõi màu đen/tối để vệt sáng xanh (#2ecc71) quét qua nhìn cực kỳ nổi và ảo diệu */
 .hr-animation { position: relative; overflow: hidden; background-color: #1a1a1a !important; } .hr-animation::after { content: ""; position: absolute; top: 0; left: -50%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, #2ecc71, transparent); animation: loading-scan 2s linear infinite; } @keyframes loading-scan { 0% { left: -50%; } 100% { left: 100%; } }
 
-<—- body —->
+
 /* 1. Class làm nền tối nhạt (Dark Mode thanh lịch) */
 .body-dark { background-color: #1a1a1a !important; color: #e0e0e0 !important; }
 
